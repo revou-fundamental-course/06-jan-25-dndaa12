@@ -2,15 +2,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+}
+@media (max-width: 600px) {
+    .main-header {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .logo-icon{
+        margin-bottom: 14px;
+    }
 }
 
 .logo-icon{
     border-radius: 50%;
     height: 50px;
     width: 50px;
-    background-image: url(https://picsum.photos/600);
+    background-image: url(image/brigitte-tohm-XyGeWTj2E7w-unsplash.jpg);
     background-size: cover;
 }
+
 nav {
     display: flex;
 }
@@ -22,6 +38,7 @@ nav {
 .right-rounded {
     border-radius: 0 5px 5px 0;
 }
+
 nav>a {
     border: 1px solid black;
     padding: 8px;
@@ -30,14 +47,18 @@ nav>a {
 }
 .banner-image {
     border: 1px solid;
-    height: 450px;
-    background-image: url(https://picsum.photos/800);
+    height: 500px;
+    background-image: url(image/vladislav-klapin-SymZoeE8quA-unsplash.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .content {
     height: 500px;
+}
+
+hr {
+    border-color: black;
 }
 
 footer {
