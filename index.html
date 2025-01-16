@@ -1,80 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@400;700&family=Lobster&family=Poppins:wght@400;600&family=Pacifico&display=swap"
+        rel="stylesheet">
     <!-- css -->
-     <link rel="stylesheet" href="C:\Users\Gilang Ramadhan\Documents\revouproject\06-jan-25-dndaa12\css\style.css">
-     <style>
-        body {
-            background-color: wheat;
-        }
-     </style>
-    </head> 
-<body>
+    <link rel="stylesheet" href="css\style.css" </head> <body>
     <!-- logo & navigation -->
     <header class="main-header">
         <div class="logo-icon">
-
         </div>
         <!-- navigation -->
-         <nav class="menu">
-            <a href="#home-page" class="left-rounded">Home</a>
-            <a href="#our-profile">Our profile</a>
-            <a href="#portofolio">Portofolio</a>
-            <a href="#message-us" class="right-rounded">Message Us</a>
-         </nav>
+        <nav class="menu">
+            <a href="#home" class="left-rounded"><span>Home</span></a>
+            <a href="#my-profile">About Me</a>
+            <a href="#portofolio">Project</a>
+            <a href="#message-me" class="right-rounded">Message Me</a>
+        </nav>
     </header>
 
-    <hr/>
+    <hr />
     <!-- main content -->
     <main>
         <!-- Home page -->
-         <section>
-           <header id="home-page">
-            <h1>Hi <span id="user-greting">User</span>, welcome to our website</h1>
-            <p>lorem ipsum dolor sit amet</p>
-           </header>
-           <div class="banner-image">
-           </div>
-         </section> 
-
-         <!-- our profile -->
-         <section>
-            <!-- title -->
-            <header id="our-profile">
-                <h1>Our Profile</h1>
-               </header>
-               <div class="content">
+        <section id="home">
+            <div class="container">
+                <div class="img">
+                    <div class="welcome-text">
+                        <p id="hi-text">Hi Guest &#x1F60A</p>
+                        <p id="welcome-message">Welcome To My Portofolio</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <div class="welcome-text">
+                        <p id="hi-text">Hi User &#x1F60A</p>
+                        <p id="welcome-message">Welcome To My Portofolio</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <div class="welcome-text">
+                        <p id="hi-text">Hi User &#x1F60A</p>
+                        <p id="welcome-message">Welcome To My Portofolio</p>
+                    </div>
+                </div>
             </div>
-         </section>
-
-         <!-- portofolio -->
-          <section>
-            <header id="portofolio">
-                <h1>Our Portofolio</h1>
-               </header>
-               <div class="content">
+            </br>
+        </section>
+        <!-- profile -->
+        <section id="my-profile">
+            <h1 style="text-align: center;">About Me</h1>
+            <div class="content">
+                <p id="greeting" ; style="font-size: 25px;">
+                    👋Hello
+                </p>
+                <p style="font-size: 25px;">
+                    Saya adalah lulusan Teknik Informatika, Universitas Indraprasta, dengan IPK 3.72. Saya memiliki
+                    semangat belajar yang tinggi dan antusiasme besar untuk berkontribusi
+                    dalam berbagai bidang pekerjaan, terutama yang memberikan tantangan baru dan peluang pengembangan
+                    diri.
+                    Dengan keahlian di bidang teknologi, saya terbiasa menggunakan Microsoft Word, Excel, serta alat
+                    desain seperti Canva. Selain itu, saya memiliki kemampuan teknis yang
+                    solid dalam bahasa pemrograman Java (NetBeans) dan pengembangan web menggunakan HTML dan PHP di
+                    Visual Studio Code.
+                    Saya adalah individu yang cepat beradaptasi, teliti, dan memiliki orientasi pada hasil. Komitmen
+                    saya adalah memberikan yang terbaik untuk mendukung keberhasilan tim dan pencapaian tujuan
+                    perusahaan.
+                </p>
             </div>
-          </section>
+        </section>
 
-          <!-- message us -->
-           <section>
-            <header id="message-us">
-                <h1>Our Message Us</h1>
-               </header>
-               <div class="content">
+        <!-- portofolio -->
+        <section id="portofolio">
+            <h1>My Project</h1>
+            <p>berikut merupakan project yang sudah saya kerjakan dengan menggunakan bahasa javaSwing, 
+                dengan database MySQL, UI/UX mengunakan figma dan text editornya menggunakan java NetBeans. 
+            </p>
+            <div class="content">
+                <img src="css\image\ss.png" alt="">
             </div>
-           </section>
+        </section>
+
+        <!-- message us -->
+        <section id="message-me">
+            <h1>Message Me</h1>
+            <!--form action  -->
+            <form id="userForm" class="styled-form">
+                <div class="content">
+                    <!-- Nama -->
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                    </div>
+
+                    <!-- Tanggal Lahir -->
+                    <div class="form-group">
+                        <label for="birthdate">Birthdate:</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+
+                    <!-- Jenis Kelamin -->
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender" required>
+                            <option value="" disabled selected>Choose One</option>
+                            <option value="Laki-laki">Male</option>
+                            <option value="Perempuan">Female</option>
+                        </select>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="button" id="submitForm">Submit</button>
+            </form>
+
+            <!-- Output Hasil -->
+            <div id="result" class="result" style="display: none;"></div>
+            </div>
+
+        </section>
     </main>
 
-    <hr/>
+    <hr />
 
     <!-- footer -->
     <footer>
-        <p>&copy; 2025-All right reserved</p>
+        <p style="font-size: 15px;">&copy; 2025-All right reserved</p>
     </footer>
-</body>
+    <script src="js/script.js"></script>
+    </body>
+
 </html>
