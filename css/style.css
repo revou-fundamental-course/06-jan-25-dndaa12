@@ -1,17 +1,46 @@
 body {
-    background: linear-gradient(to right, #36376d, #7a878f);
+    background-color: #7879a3;;
+}
+
+/* #my-profile{
+    background: linear-gradient(to right, #545592, #31325a);
+    height: 500px;
+    top: 0;
+} */
+#portofolio {
+    background: linear-gradient(to right, #6a6b9c, #31325a);
+    top: 0;
+}
+
+#portofolio p {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Playfair Display', serif;
+
+}
+
+#my-profile .content p {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Playfair Display', serif;
+
 }
 
 h1 {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     color: rgb(248, 248, 248);
-    font-size: 30px;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
     text-align: center;
 }
 
 p {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
     text-align: center;
     color: aliceblue;
     font-size: 30px;
@@ -46,6 +75,36 @@ body {
 }
 
 @media (max-width: 600px) {
+
+    h1,
+    h2,
+    h3,
+    p {
+        font-size: 80%;
+        /* Sesuaikan ukuran teks */
+        line-height: 1.4;
+        /* Jarak antar baris */
+        max-width: 90%;
+        /* Batasi lebar elemen */
+        margin: 0 auto;
+        /* Tengah secara horizontal */
+        word-wrap: break-word;
+        /* Memaksa kata panjang pindah baris */
+        display: flex;
+        flex-direction: column;
+        /* Tumpuk elemen secara vertikal */
+        align-items: center;
+        /* Rata tengah */
+        padding: 10px;
+    }
+
+    .img {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
     .main-header {
         flex-direction: column;
     }
@@ -60,11 +119,11 @@ body {
         margin-bottom: 14px;
     }
 
-    .styled-form{
-        width: 70%;
+    .styled-form {
+        width: 100%;
     }
 
-}   
+}
 
 .logo-icon {
     border-radius: 50%;
@@ -145,6 +204,9 @@ nav>a span {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-buttom: 0;
+    justify-content: space-between;
+
 
     overflow: hidden;
     display: none;
@@ -176,7 +238,7 @@ nav>a span {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    filter: blur(5px);
+    filter: blur(10px);
     transition: opacity 1s ease-in-out;
     /* Animasi transisi */
 }
@@ -197,19 +259,21 @@ nav>a span {
     height: 500px;
 }
 
-#portofolio .content{
+#portofolio .content {
     display: flex;
 }
-#portofolio img{
-    width: 50%;
-    height: 50%;
+
+#portofolio img {
+    width: 30%;
+    height: 30%;
     margin: 0 auto;
-    border-radius: 20px;
+    border-radius: 10px;
 }
-#portofolio p{
+
+/* #content p{
     font-size: 20px;
-    margin: 0 auto;
-}
+    padding: 20px;
+} */
 
 .styled-form {
     background: #ffffff;
@@ -220,7 +284,8 @@ nav>a span {
     max-width: 700px;
     margin: 0 auto;
 }
-.styled-form p{
+
+.styled-form p {
     color: #000000;
 }
 
